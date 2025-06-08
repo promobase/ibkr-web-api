@@ -1,0 +1,34 @@
+# IserverAccountAccountIdAlertActivatePost200Response
+
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**request_id** | **int** |  | [optional] 
+**order_id** | **int** |  | [optional] 
+**success** | **bool** |  | [optional] 
+**text** | **str** |  | [optional] 
+**order_status** | **str** |  | [optional] 
+**failure_list** | **str** |  | [optional] 
+
+## Example
+
+```python
+from openapi_client.models.iserver_account_account_id_alert_activate_post200_response import IserverAccountAccountIdAlertActivatePost200Response
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of IserverAccountAccountIdAlertActivatePost200Response from a JSON string
+iserver_account_account_id_alert_activate_post200_response_instance = IserverAccountAccountIdAlertActivatePost200Response.from_json(json)
+# print the JSON string representation of the object
+print(IserverAccountAccountIdAlertActivatePost200Response.to_json())
+
+# convert the object into a dict
+iserver_account_account_id_alert_activate_post200_response_dict = iserver_account_account_id_alert_activate_post200_response_instance.to_dict()
+# create an instance of IserverAccountAccountIdAlertActivatePost200Response from a dict
+iserver_account_account_id_alert_activate_post200_response_from_dict = IserverAccountAccountIdAlertActivatePost200Response.from_dict(iserver_account_account_id_alert_activate_post200_response_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

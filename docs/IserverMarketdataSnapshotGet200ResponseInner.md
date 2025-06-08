@@ -1,0 +1,147 @@
+# IserverMarketdataSnapshotGet200ResponseInner
+
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**server_id** | **str** |  | [optional] 
+**conid** | **int** |  | [optional] 
+**updated** | **int** |  | [optional] 
+**var_31** | **str** | Last Price - The last price at which the contract traded. May contain one of the following prefixes:   * C - Previous day&#39;s closing price.   * H - Trading has halted.  | [optional] 
+**var_55** | **str** | Symbol | [optional] 
+**var_58** | **str** | Text | [optional] 
+**var_70** | **str** | High - Current day high price | [optional] 
+**var_71** | **str** | Low - Current day low price | [optional] 
+**var_73** | **str** | Market Value - The current market value of  your position in the security. Market Value is calculated with real time market data (even when not subscribed to market data). | [optional] 
+**var_74** | **str** | Avg Price - The average price of the position. | [optional] 
+**var_75** | **str** | Unrealized PnL - Unrealized profit or loss. Unrealized PnL is calculated with real time market data (even when not subscribed to market data). | [optional] 
+**var_76** | **str** | Formatted position | [optional] 
+**var_77** | **str** | Formatted Unrealized PnL | [optional] 
+**var_78** | **str** | Daily PnL - Your profit or loss of the day since prior close. Daily PnL is calculated with real time market data (even when not subscribed to market data). | [optional] 
+**var_79** | **str** | Realized PnL - Realized profit or loss. Realized PnL is calculated with real time market data (even when not subscribed to market data). | [optional] 
+**var_80** | **str** | Unrealized PnL % - Unrealized profit or loss expressed in percentage. | [optional] 
+**var_82** | **str** | Change - The difference between the last price and the close on the previous trading day | [optional] 
+**var_83** | **str** | Change % - The difference between the last price and the close on the previous trading day in percentage. | [optional] 
+**var_84** | **str** | Bid Price - The highest-priced bid on the contract. | [optional] 
+**var_85** | **str** | Ask Size - The number of contracts or shares offered at the ask price. For US stocks, the number displayed is divided by 100. | [optional] 
+**var_86** | **str** | Ask Price - The lowest-priced offer on the contract. | [optional] 
+**var_87** | **str** | Volume - Volume for the day, formatted with &#39;K&#39; for thousands or &#39;M&#39; for millions. For higher precision volume refer to field 7762. | [optional] 
+**var_87_raw__deprecated** | **str** | Raw Volume - Volume for the day, provided in long form without formatted with K/M. This field value is deprecated, for high precision volume refer to field 7762. | [optional] 
+**var_88** | **str** | Bid Size - The number of contracts or shares bid for at the bid price. For US stocks, the number displayed is divided by 100. | [optional] 
+**var_6004** | **str** | Exchange | [optional] 
+**var_6008** | **int** | Conid - Contract identifier from IBKR&#39;s database. | [optional] 
+**var_6070** | **str** | SecType - The asset class of the instrument. | [optional] 
+**var_6072** | **str** | Months | [optional] 
+**var_6073** | **str** | Regular Expiry | [optional] 
+**var_6119** | **str** | Marker for market data delivery method (similar to request id) | [optional] 
+**var_6457** | **int** | Underlying Conid. Use /trsrv/secdef to get more information about the security | [optional] 
+**var_6508** | **str** | Service Params. | [optional] 
+**var_6509** | **str** | Market Data Availability. The field may contain three chars. First char defines: R &#x3D; RealTime, D &#x3D; Delayed, Z &#x3D; Frozen, Y &#x3D; Frozen Delayed, N &#x3D; Not Subscribed. Second char defines: P &#x3D; Snapshot, p &#x3D; Consolidated. Third char defines: B &#x3D; Book   * RealTime - Data is relayed back in real time without delay, market data subscription(s) are required.   * Delayed - Data is relayed back 15-20 min delayed.    * Frozen - Last recorded data at market close, relayed back in real time.   * Frozen Delayed - Last recorded data at market close, relayed back delayed.   * Not Subscribed - User does not have the required market data subscription(s) to relay back either real time or delayed data.   * Snapshot - Snapshot request is available for contract.   * Consolidated - Market data is aggregated across multiple exchanges or venues.   * Book - Top of the book data is available for contract.  | [optional] 
+**var_7051** | **str** | Company name | [optional] 
+**var_7057** | **str** | Ask Exch - Displays the exchange(s) offering the SMART price. A&#x3D;AMEX, C&#x3D;CBOE, I&#x3D;ISE, X&#x3D;PHLX, N&#x3D;PSE, B&#x3D;BOX, Q&#x3D;NASDAQOM, Z&#x3D;BATS, W&#x3D;CBOE2, T&#x3D;NASDAQBX, M&#x3D;MIAX, H&#x3D;GEMINI, E&#x3D;EDGX, J&#x3D;MERCURY  | [optional] 
+**var_7058** | **str** | Last Exch - Displays the exchange(s) offering the SMART price. A&#x3D;AMEX, C&#x3D;CBOE, I&#x3D;ISE, X&#x3D;PHLX, N&#x3D;PSE, B&#x3D;BOX, Q&#x3D;NASDAQOM, Z&#x3D;BATS, W&#x3D;CBOE2, T&#x3D;NASDAQBX, M&#x3D;MIAX, H&#x3D;GEMINI, E&#x3D;EDGX, J&#x3D;MERCURY  | [optional] 
+**var_7059** | **str** | Last Size - The number of unites traded at the last price | [optional] 
+**var_7068** | **str** | Bid Exch - Displays the exchange(s) offering the SMART price. A&#x3D;AMEX, C&#x3D;CBOE, I&#x3D;ISE, X&#x3D;PHLX, N&#x3D;PSE, B&#x3D;BOX, Q&#x3D;NASDAQOM, Z&#x3D;BATS, W&#x3D;CBOE2, T&#x3D;NASDAQBX, M&#x3D;MIAX, H&#x3D;GEMINI, E&#x3D;EDGX, J&#x3D;MERCURY  | [optional] 
+**var_7084** | **str** | Implied Vol./Hist. Vol % - The ratio of the implied volatility over the historical volatility, expressed as a percentage. | [optional] 
+**var_7085** | **str** | Put/Call Interest - Put option open interest/call option open interest for the trading day. | [optional] 
+**var_7086** | **str** | Put/Call Volume - Put option volume/call option volume for the trading day. | [optional] 
+**var_7087** | **str** | Hist. Vol. % - 30-day real-time historical volatility. | [optional] 
+**var_7088** | **str** | Hist. Vol. Close % - Shows the historical volatility based on previous close price. | [optional] 
+**var_7089** | **str** | Opt. Volume - Option Volume | [optional] 
+**var_7094** | **str** | Conid + Exchange | [optional] 
+**var_7184** | **str** | canBeTraded - If contract is a trade-able instrument. Returns 1(true) or 0(false). | [optional] 
+**var_7219** | **str** | Contract Description | [optional] 
+**var_7220** | **str** | Contract Description | [optional] 
+**var_7221** | **str** | Listing Exchange | [optional] 
+**var_7280** | **str** | Industry - Displays the type of industry under which the underlying company can be categorized. | [optional] 
+**var_7281** | **str** | Category - Displays a more detailed level of description within the industry under which the underlying company can be categorized. | [optional] 
+**var_7282** | **str** | Average Volume - The average daily trading volume over 90 days. | [optional] 
+**var_7283** | **str** | Option Implied Vol. % - A prediction of how volatile an underlying will be in the future. At the market volatility estimated for a maturity thirty calendar days forward of the current trading day, and based on option prices from two consecutive expiration months. To query the Implied Vol. % of a specific strike refer to field 7633.  | [optional] 
+**var_7284** | **str** | Historic Volume (30d) | [optional] 
+**var_7285** | **str** | Put/Call Ratio | [optional] 
+**var_7286** | **str** | Dividend Amount - Displays the amount of the next dividend. | [optional] 
+**var_7287** | **str** | Dividend Yield % - This value is the toal of the expected dividend payments over the next twelve months per share divided by the Current Price and is expressed as a percentage. For derivatives, this displays the total of the expected dividend payments over the expiry date.  | [optional] 
+**var_7288** | **str** | Ex-date of the dividend | [optional] 
+**var_7289** | **str** | Market Cap | [optional] 
+**var_7290** | **str** | P/E | [optional] 
+**var_7291** | **str** | EPS | [optional] 
+**var_7292** | **str** | Cost Basis - Your current position in this security multiplied by the average price and multiplier. | [optional] 
+**var_7293** | **str** | 52 Week High - The highest price for the past 52 weeks. | [optional] 
+**var_7294** | **str** | 52 Week Low - The lowest price for the past 52 weeks. | [optional] 
+**var_7295** | **str** | Open - Today&#39;s opening price. | [optional] 
+**var_7296** | **str** | Close - Today&#39;s closing price. | [optional] 
+**var_7308** | **str** | Delta - The ratio of the change in the price of the option to the corresponding change in the price of the underlying. | [optional] 
+**var_7309** | **str** | Gamma - The rate of change for the delta with respect to the underlying asset&#39;s price. | [optional] 
+**var_7310** | **str** | Theta - A measure of the rate of decline the value of an option due to the passage of time. | [optional] 
+**var_7311** | **str** | Vega - The amount that the price of an option changes compared to a 1% change in the volatility. | [optional] 
+**var_7607** | **str** | Opt. Volume Change % - Today&#39;s option volume as a percentage of the average option volume. | [optional] 
+**var_7633** | **str** | Implied Vol. % - The implied volatility for the specific strike of the option in percentage. To query the Option Implied Vol. % from the underlying refer to field 7283.   | [optional] 
+**var_7635** | **str** | Mark - The mark price is, the ask price if ask is less than last price, the bid price if bid is more than the last price, otherwise it&#39;s equal to last price. | [optional] 
+**var_7636** | **str** | Shortable Shares - Number of shares available for shorting. | [optional] 
+**var_7637** | **str** | Fee Rate - Interest rate charged on borrowed shares. | [optional] 
+**var_7638** | **str** | Option Open Interest | [optional] 
+**var_7639** | **str** | % of Mark Value - Displays the market value of the contract as a percentage of the total market value of the account. Mark Value is calculated with real time market data (even when not subscribed to market data).  | [optional] 
+**var_7644** | **str** | Shortable - Describes the level of difficulty with which the security can be sold short. | [optional] 
+**var_7655** | **str** | Morningstar Rating - Displays Morningstar Rating provided value. Requires [Morningstar](https://www.interactivebrokers.com/en/index.php?f&#x3D;14262) subscription. | [optional] 
+**var_7671** | **str** | Dividends - This value is the total of the expected dividend payments over the next twelve months per share. | [optional] 
+**var_7672** | **str** | Dividends TTM - This value is the total of the expected dividend payments over the last twelve months per share. | [optional] 
+**var_7674** | **str** | EMA(200) - Exponential moving average (N&#x3D;200). | [optional] 
+**var_7675** | **str** | EMA(100) - Exponential moving average (N&#x3D;100). | [optional] 
+**var_7676** | **str** | EMA(50) - Exponential moving average (N&#x3D;50). | [optional] 
+**var_7677** | **str** | EMA(20) - Exponential moving average (N&#x3D;20). | [optional] 
+**var_7678** | **str** | Price/EMA(200) - Price to Exponential moving average (N&#x3D;200) ratio -1, displayed in percents. | [optional] 
+**var_7679** | **str** | Price/EMA(100) - Price to Exponential moving average (N&#x3D;100) ratio -1, displayed in percents. | [optional] 
+**var_7680** | **str** | Price/EMA(50) - Price to Exponential moving average (N&#x3D;50) ratio -1, displayed in percents. | [optional] 
+**var_7681** | **str** | Price/EMA(20) - Price to Exponential moving average (N&#x3D;20) ratio -1, displayed in percents. | [optional] 
+**var_7682** | **str** | Change Since Open - The difference between the last price and the open price. | [optional] 
+**var_7683** | **str** | Upcoming Event - Shows the next major company event. Requires [Wall Street Horizon](https://www.interactivebrokers.com/en/index.php?f&#x3D;24674) subscription. | [optional] 
+**var_7684** | **str** | Upcoming Event Date - The date of the next major company event. Requires [Wall Street Horizon](https://www.interactivebrokers.com/en/index.php?f&#x3D;24674) subscription. | [optional] 
+**var_7685** | **str** | Upcoming Analyst Meeting - The date and time of the next scheduled analyst meeting. Requires [Wall Street Horizon](https://www.interactivebrokers.com/en/index.php?f&#x3D;24674) subscription. | [optional] 
+**var_7686** | **str** | Upcoming Earnings - The date and time of the next scheduled earnings/earnings call event. Requires [Wall Street Horizon](https://www.interactivebrokers.com/en/index.php?f&#x3D;24674) subscription. | [optional] 
+**var_7687** | **str** | Upcoming Misc Event - The date and time of the next shareholder meeting, presentation or other event. Requires [Wall Street Horizon](https://www.interactivebrokers.com/en/index.php?f&#x3D;24674) subscription. | [optional] 
+**var_7688** | **str** | Recent Analyst Meeting - The date and time of the most recent analyst meeting. Requires [Wall Street Horizon](https://www.interactivebrokers.com/en/index.php?f&#x3D;24674) subscription. | [optional] 
+**var_7689** | **str** | Recent Earnings - The date and time of the most recent earnings/earning call event. Requires [Wall Street Horizon](https://www.interactivebrokers.com/en/index.php?f&#x3D;24674) subscription. | [optional] 
+**var_7690** | **str** | Recent Misc Event - The date and time of the most recent shareholder meeting, presentation or other event. Requires [Wall Street Horizon](https://www.interactivebrokers.com/en/index.php?f&#x3D;24674) subscription. | [optional] 
+**var_7694** | **str** | Probability of Max Return - Customer implied probability of maximum potential gain. | [optional] 
+**var_7695** | **str** | Break Even - Break even points | [optional] 
+**var_7696** | **str** | SPX Delta - Beta Weighted Delta is calculated using the formula; Delta x dollar adjusted beta, where adjusted beta is adjusted by the ratio of the close price. | [optional] 
+**var_7697** | **str** | Futures Open Interest - Total number of outstanding futures contracts | [optional] 
+**var_7698** | **str** | Last Yield - Implied yield of the bond if it is purchased at the current last price. Last yield is calculated using the Last price on all possible call dates. It is assumed that prepayment occurs if the bond has call or put provisions and the issuer can offer a lower coupon rate based on current market rates. The yield to worst will be the lowest of the yield to maturity or yield to call (if the bond has prepayment provisions). Yield to worse may be the same as yield to maturity but never higher.  | [optional] 
+**var_7699** | **str** | Bid Yield - Implied yield of the bond if it is purchased at the current bid price. Bid yield is calculated using the Ask on all possible call dates. It is assumed that prepayment occurs if the bond has call or put provisions and the issuer can offer a lower coupon rate based on current market rates. The yield to worst will be the lowest of the yield to maturity or yield to call (if the bond has prepayment provisions). Yield to worse may be the same as yield to maturity but never higher.  | [optional] 
+**var_7700** | **str** | Probability of Max Return - Customer implied probability of maximum potential gain. | [optional] 
+**var_7702** | **str** | Probability of Max Loss - Customer implied probability of maximum potential loss. | [optional] 
+**var_7703** | **str** | Profit Probability - Customer implied probability of any gain. | [optional] 
+**var_7704** | **str** | Organization Type | [optional] 
+**var_7705** | **str** | Debt Class | [optional] 
+**var_7706** | **str** | Ratings - Ratings issued for bond contract. | [optional] 
+**var_7707** | **str** | Bond State Code | [optional] 
+**var_7708** | **str** | Bond Type | [optional] 
+**var_7714** | **str** | Last Trading Date | [optional] 
+**var_7715** | **str** | Issue Date | [optional] 
+**var_7718** | **str** | Beta - Beta is against standard index. | [optional] 
+**var_7720** | **str** | Ask Yield - Implied yield of the bond if it is purchased at the current offer. Ask yield is calculated using the Bid on all possible call dates. It is assumed that prepayment occurs if the bond has call or put provisions and the issuer can offer a lower coupon rate based on current market rates. The yield to worst will be the lowest of the yield to maturity or yield to call (if the bond has prepayment provisions). Yield to worse may be the same as yield to maturity but never higher.  | [optional] 
+**var_7741** | **str** | Prior Close - Yesterday&#39;s closing price | [optional] 
+**var_7762** | **str** | Volume Long - High precision volume for the day. For formatted volume refer to field 87. | [optional] 
+**var_7768** | **str** | hasTradingPermissions - if user has trading permissions for specified contract. Returns 1(true) or 0(false). | [optional] 
+
+## Example
+
+```python
+from openapi_client.models.iserver_marketdata_snapshot_get200_response_inner import IserverMarketdataSnapshotGet200ResponseInner
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of IserverMarketdataSnapshotGet200ResponseInner from a JSON string
+iserver_marketdata_snapshot_get200_response_inner_instance = IserverMarketdataSnapshotGet200ResponseInner.from_json(json)
+# print the JSON string representation of the object
+print(IserverMarketdataSnapshotGet200ResponseInner.to_json())
+
+# convert the object into a dict
+iserver_marketdata_snapshot_get200_response_inner_dict = iserver_marketdata_snapshot_get200_response_inner_instance.to_dict()
+# create an instance of IserverMarketdataSnapshotGet200ResponseInner from a dict
+iserver_marketdata_snapshot_get200_response_inner_from_dict = IserverMarketdataSnapshotGet200ResponseInner.from_dict(iserver_marketdata_snapshot_get200_response_inner_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+

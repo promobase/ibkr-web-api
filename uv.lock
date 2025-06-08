@@ -1,0 +1,23 @@
+version = 1
+revision = 2
+requires-python = ">=3.12"
+
+[[package]]
+name = "ibkr-web-api"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "openapi-generator-cli" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "openapi-generator-cli", specifier = ">=7.13.0.post0" }]
+
+[[package]]
+name = "openapi-generator-cli"
+version = "7.13.0.post0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/42/96/888960134ccd709ec6481ae5fbbc10c300a5970df5f3902bc7db441a9735/openapi_generator_cli-7.13.0.post0.tar.gz", hash = "sha256:ba40cac2eb5aab5544a889f8cd97b57fae995fea242b7ecb05524ea86da85fe4", size = 27143358, upload-time = "2025-04-28T17:47:34.769Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/11/ff/94325c9aff601231df9e83168179ecc6ad054e1274464884dab1b1db7c49/openapi_generator_cli-7.13.0.post0-py3-none-any.whl", hash = "sha256:e17d099203964e82db5fc7309b27f2154dd6dca3b237084acc896fd03a6f4569", size = 27156894, upload-time = "2025-04-28T17:47:24.268Z" },
+]
