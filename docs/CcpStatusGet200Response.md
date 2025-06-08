@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.ccp_status_get200_response import CcpStatusGet200Response
+from ibkr_web_api.models.ccp_status_get200_response import CcpStatusGet200Response
 
 # TODO update the JSON string below
 json = "{}"

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.calendar_request_date import CalendarRequestDate
+from ibkr_web_api.models.calendar_request_date import CalendarRequestDate
 
 # TODO update the JSON string below
 json = "{}"

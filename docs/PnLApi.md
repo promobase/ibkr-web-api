@@ -1,4 +1,4 @@
-# ibkr-web-api.PnLApi
+# ibkr_web_api.PnLApi
 
 All URIs are relative to *http://localhost:5000/v1/api*
 
@@ -20,22 +20,22 @@ To receive streaming PnL the endpoint /ws can be used. Refer to [Streaming WebSo
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.iserver_account_pnl_partitioned_get200_response import IserverAccountPnlPartitionedGet200Response
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.iserver_account_pnl_partitioned_get200_response import IserverAccountPnlPartitionedGet200Response
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.PnLApi(api_client)
+    api_instance = ibkr_web_api.PnLApi(api_client)
 
     try:
         # PnL for the selected account

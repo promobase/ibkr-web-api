@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.scanner_result_contracts import ScannerResultContracts
+from ibkr_web_api.models.scanner_result_contracts import ScannerResultContracts
 
 # TODO update the JSON string below
 json = "{}"

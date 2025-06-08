@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.iserver_contract_conid_algos_get200_response_inner_parameters_inner import IserverContractConidAlgosGet200ResponseInnerParametersInner
+from ibkr_web_api.models.iserver_contract_conid_algos_get200_response_inner_parameters_inner import IserverContractConidAlgosGet200ResponseInnerParametersInner
 
 # TODO update the JSON string below
 json = "{}"

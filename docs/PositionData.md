@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.position_data import PositionData
+from ibkr_web_api.models.position_data import PositionData
 
 # TODO update the JSON string below
 json = "{}"

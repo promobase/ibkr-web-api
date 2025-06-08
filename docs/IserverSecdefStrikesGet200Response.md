@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.iserver_secdef_strikes_get200_response import IserverSecdefStrikesGet200Response
+from ibkr_web_api.models.iserver_secdef_strikes_get200_response import IserverSecdefStrikesGet200Response
 
 # TODO update the JSON string below
 json = "{}"

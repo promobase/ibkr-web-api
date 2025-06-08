@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.pa_transactions_post_request import PaTransactionsPostRequest
+from ibkr_web_api.models.pa_transactions_post_request import PaTransactionsPostRequest
 
 # TODO update the JSON string below
 json = "{}"

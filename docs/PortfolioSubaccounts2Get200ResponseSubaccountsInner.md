@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.portfolio_subaccounts2_get200_response_subaccounts_inner import PortfolioSubaccounts2Get200ResponseSubaccountsInner
+from ibkr_web_api.models.portfolio_subaccounts2_get200_response_subaccounts_inner import PortfolioSubaccounts2Get200ResponseSubaccountsInner
 
 # TODO update the JSON string below
 json = "{}"

@@ -45,5 +45,5 @@ setup(
     long_description="""\
     Client Poral Web API
     """,  # noqa: E501
-    package_data={"ibkr-web-api": ["py.typed"]},
+    package_data={"ibkr_web_api": ["py.typed"]},
 )

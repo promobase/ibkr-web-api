@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.trsrv_secdef_schedule_get200_response import TrsrvSecdefScheduleGet200Response
+from ibkr_web_api.models.trsrv_secdef_schedule_get200_response import TrsrvSecdefScheduleGet200Response
 
 # TODO update the JSON string below
 json = "{}"

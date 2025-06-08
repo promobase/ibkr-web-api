@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.auth_status import AuthStatus
+from ibkr_web_api.models.auth_status import AuthStatus
 
 # TODO update the JSON string below
 json = "{}"

@@ -1,4 +1,4 @@
-# ibkr-web-api.StreamingApi
+# ibkr_web_api.StreamingApi
 
 All URIs are relative to *http://localhost:5000/v1/api*
 
@@ -18,21 +18,21 @@ The streaming API is documented under [Streaming WebSocket Data](https://interac
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.StreamingApi(api_client)
+    api_instance = ibkr_web_api.StreamingApi(api_client)
 
     try:
         # Websocket Endpoint

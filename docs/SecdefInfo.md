@@ -26,7 +26,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.secdef_info import SecdefInfo
+from ibkr_web_api.models.secdef_info import SecdefInfo
 
 # TODO update the JSON string below
 json = "{}"

@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.fyi_settings_get200_response_inner import FyiSettingsGet200ResponseInner
+from ibkr_web_api.models.fyi_settings_get200_response_inner import FyiSettingsGet200ResponseInner
 
 # TODO update the JSON string below
 json = "{}"

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.iserver_contract_rules_post_request import IserverContractRulesPostRequest
+from ibkr_web_api.models.iserver_contract_rules_post_request import IserverContractRulesPostRequest
 
 # TODO update the JSON string below
 json = "{}"

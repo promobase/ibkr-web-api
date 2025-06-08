@@ -1,4 +1,4 @@
-# ibkr-web-api.ScannerApi
+# ibkr_web_api.ScannerApi
 
 All URIs are relative to *http://localhost:5000/v1/api*
 
@@ -20,24 +20,24 @@ Using a direct connection to the market data farm, will provide results to the r
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.hmds_scanner_post_request import HmdsScannerPostRequest
-from ibkr-web-api.models.scanner_result import ScannerResult
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.hmds_scanner_post_request import HmdsScannerPostRequest
+from ibkr_web_api.models.scanner_result import ScannerResult
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.ScannerApi(api_client)
-    body = ibkr-web-api.HmdsScannerPostRequest() # HmdsScannerPostRequest | request body
+    api_instance = ibkr_web_api.ScannerApi(api_client)
+    body = ibkr_web_api.HmdsScannerPostRequest() # HmdsScannerPostRequest | request body
 
     try:
         # Run Scanner (Beta)
@@ -90,22 +90,22 @@ Returns an object contains four lists contain all parameters for scanners
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.iserver_scanner_params_get200_response import IserverScannerParamsGet200Response
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.iserver_scanner_params_get200_response import IserverScannerParamsGet200Response
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.ScannerApi(api_client)
+    api_instance = ibkr_web_api.ScannerApi(api_client)
 
     try:
         # Scanner Parameters
@@ -154,24 +154,24 @@ Searches for contracts according to the filters specified in scanner/params endp
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.iserver_scanner_run_post200_response_inner import IserverScannerRunPost200ResponseInner
-from ibkr-web-api.models.scanner_params import ScannerParams
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.iserver_scanner_run_post200_response_inner import IserverScannerRunPost200ResponseInner
+from ibkr_web_api.models.scanner_params import ScannerParams
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.ScannerApi(api_client)
-    body = ibkr-web-api.ScannerParams() # ScannerParams | scanner-params request
+    api_instance = ibkr_web_api.ScannerApi(api_client)
+    body = ibkr_web_api.ScannerParams() # ScannerParams | scanner-params request
 
     try:
         # Scanner Run

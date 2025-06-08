@@ -35,7 +35,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.iserver_contract_rules_post200_response_rules_inner import IserverContractRulesPost200ResponseRulesInner
+from ibkr_web_api.models.iserver_contract_rules_post200_response_rules_inner import IserverContractRulesPost200ResponseRulesInner
 
 # TODO update the JSON string below
 json = "{}"

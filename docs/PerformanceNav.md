@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.performance_nav import PerformanceNav
+from ibkr_web_api.models.performance_nav import PerformanceNav
 
 # TODO update the JSON string below
 json = "{}"

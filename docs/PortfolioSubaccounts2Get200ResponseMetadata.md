@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.portfolio_subaccounts2_get200_response_metadata import PortfolioSubaccounts2Get200ResponseMetadata
+from ibkr_web_api.models.portfolio_subaccounts2_get200_response_metadata import PortfolioSubaccounts2Get200ResponseMetadata
 
 # TODO update the JSON string below
 json = "{}"

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.pa_performance_post_request import PaPerformancePostRequest
+from ibkr_web_api.models.pa_performance_post_request import PaPerformancePostRequest
 
 # TODO update the JSON string below
 json = "{}"

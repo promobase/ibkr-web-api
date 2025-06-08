@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.iserver_account_pnl_partitioned_get200_response import IserverAccountPnlPartitionedGet200Response
+from ibkr_web_api.models.iserver_account_pnl_partitioned_get200_response import IserverAccountPnlPartitionedGet200Response
 
 # TODO update the JSON string below
 json = "{}"

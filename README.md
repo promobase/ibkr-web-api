@@ -24,7 +24,7 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 
 Then import the package:
 ```python
-import ibkr-web-api
+import ibkr_web_api
 ```
 
 ### Setuptools
@@ -38,7 +38,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import ibkr-web-api
+import ibkr_web_api
 ```
 
 ### Tests
@@ -51,22 +51,22 @@ Please follow the [installation procedure](#installation--usage) and then run th
 
 ```python
 
-import ibkr-web-api
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.AccountApi(api_client)
+    api_instance = ibkr_web_api.AccountApi(api_client)
 
     try:
         # PnL for the selected account

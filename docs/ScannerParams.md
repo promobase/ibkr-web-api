@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.scanner_params import ScannerParams
+from ibkr_web_api.models.scanner_params import ScannerParams
 
 # TODO update the JSON string below
 json = "{}"

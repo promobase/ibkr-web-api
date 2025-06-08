@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.trsrv_secdef_post_request import TrsrvSecdefPostRequest
+from ibkr_web_api.models.trsrv_secdef_post_request import TrsrvSecdefPostRequest
 
 # TODO update the JSON string below
 json = "{}"

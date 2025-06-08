@@ -33,7 +33,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.trade import Trade
+from ibkr_web_api.models.trade import Trade
 
 # TODO update the JSON string below
 json = "{}"

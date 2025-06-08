@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.fyi_deliveryoptions_device_post_request import FyiDeliveryoptionsDevicePostRequest
+from ibkr_web_api.models.fyi_deliveryoptions_device_post_request import FyiDeliveryoptionsDevicePostRequest
 
 # TODO update the JSON string below
 json = "{}"

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.iserver_marketdata_conid_unsubscribe_get200_response import IserverMarketdataConidUnsubscribeGet200Response
+from ibkr_web_api.models.iserver_marketdata_conid_unsubscribe_get200_response import IserverMarketdataConidUnsubscribeGet200Response
 
 # TODO update the JSON string below
 json = "{}"

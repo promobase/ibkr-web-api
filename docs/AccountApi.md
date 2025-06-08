@@ -1,4 +1,4 @@
-# ibkr-web-api.AccountApi
+# ibkr_web_api.AccountApi
 
 All URIs are relative to *http://localhost:5000/v1/api*
 
@@ -28,22 +28,22 @@ To receive streaming PnL the endpoint /ws can be used. Refer to [Streaming WebSo
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.iserver_account_pnl_partitioned_get200_response import IserverAccountPnlPartitionedGet200Response
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.iserver_account_pnl_partitioned_get200_response import IserverAccountPnlPartitionedGet200Response
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.AccountApi(api_client)
+    api_instance = ibkr_web_api.AccountApi(api_client)
 
     try:
         # PnL for the selected account
@@ -92,24 +92,24 @@ If an user has multiple accounts, and user wants to get orders, trades, etc. of 
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.iserver_account_post200_response import IserverAccountPost200Response
-from ibkr-web-api.models.set_account import SetAccount
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.iserver_account_post200_response import IserverAccountPost200Response
+from ibkr_web_api.models.set_account import SetAccount
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.AccountApi(api_client)
-    body = ibkr-web-api.SetAccount() # SetAccount | account id
+    api_instance = ibkr_web_api.AccountApi(api_client)
+    body = ibkr_web_api.SetAccount() # SetAccount | account id
 
     try:
         # Switch Account
@@ -161,22 +161,22 @@ Returns a list of accounts the user has trading access to, their respective alia
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.iserver_accounts_get200_response import IserverAccountsGet200Response
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.iserver_accounts_get200_response import IserverAccountsGet200Response
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.AccountApi(api_client)
+    api_instance = ibkr_web_api.AccountApi(api_client)
 
     try:
         # Brokerage Accounts
@@ -225,22 +225,22 @@ Information regarding settled cash, cash balances, etc. in the account's base cu
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.portfolio_account_id_ledger_get200_response import PortfolioAccountIdLedgerGet200Response
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.portfolio_account_id_ledger_get200_response import PortfolioAccountIdLedgerGet200Response
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.AccountApi(api_client)
+    api_instance = ibkr_web_api.AccountApi(api_client)
     account_id = 'account_id_example' # str | account id
 
     try:
@@ -293,22 +293,22 @@ Account information related to account Id /portfolio/accounts or /portfolio/suba
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.account import Account
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.account import Account
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.AccountApi(api_client)
+    api_instance = ibkr_web_api.AccountApi(api_client)
     account_id = 'account_id_example' # str | account id
 
     try:
@@ -361,22 +361,22 @@ Returns information about margin, cash balances and other information related to
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.portfolio_account_id_summary_get200_response import PortfolioAccountIdSummaryGet200Response
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.portfolio_account_id_summary_get200_response import PortfolioAccountIdSummaryGet200Response
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.AccountApi(api_client)
+    api_instance = ibkr_web_api.AccountApi(api_client)
     account_id = 'account_id_example' # str | account id
 
     try:
@@ -429,22 +429,22 @@ In non-tiered account structures, returns a list of accounts for which the user 
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.account import Account
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.account import Account
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.AccountApi(api_client)
+    api_instance = ibkr_web_api.AccountApi(api_client)
 
     try:
         # Portfolio Accounts
@@ -493,22 +493,22 @@ Used in tiered account structures (such as Financial Advisor and IBroker Account
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.portfolio_subaccounts2_get200_response import PortfolioSubaccounts2Get200Response
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.portfolio_subaccounts2_get200_response import PortfolioSubaccounts2Get200Response
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.AccountApi(api_client)
+    api_instance = ibkr_web_api.AccountApi(api_client)
     page = '0' # str |  (default to '0')
 
     try:
@@ -561,22 +561,22 @@ Used in tiered account structures (such as Financial Advisor and IBroker Account
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.account import Account
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.account import Account
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.AccountApi(api_client)
+    api_instance = ibkr_web_api.AccountApi(api_client)
 
     try:
         # List of Sub-Accounts

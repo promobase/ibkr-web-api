@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.iserver_secdef_search_post_request import IserverSecdefSearchPostRequest
+from ibkr_web_api.models.iserver_secdef_search_post_request import IserverSecdefSearchPostRequest
 
 # TODO update the JSON string below
 json = "{}"

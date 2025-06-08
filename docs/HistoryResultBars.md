@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.history_result_bars import HistoryResultBars
+from ibkr_web_api.models.history_result_bars import HistoryResultBars
 
 # TODO update the JSON string below
 json = "{}"

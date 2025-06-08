@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.iserver_marketdata_snapshot_get400_response import IserverMarketdataSnapshotGet400Response
+from ibkr_web_api.models.iserver_marketdata_snapshot_get400_response import IserverMarketdataSnapshotGet400Response
 
 # TODO update the JSON string below
 json = "{}"

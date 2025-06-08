@@ -1,4 +1,4 @@
-# ibkr-web-api.TradesApi
+# ibkr_web_api.TradesApi
 
 All URIs are relative to *http://localhost:5000/v1/api*
 
@@ -19,22 +19,22 @@ Returns a list of trades for the currently selected account for current day and 
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.trade import Trade
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.trade import Trade
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.TradesApi(api_client)
+    api_instance = ibkr_web_api.TradesApi(api_client)
 
     try:
         # List of Trades for the selected account

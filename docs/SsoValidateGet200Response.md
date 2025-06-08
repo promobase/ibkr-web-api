@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.sso_validate_get200_response import SsoValidateGet200Response
+from ibkr_web_api.models.sso_validate_get200_response import SsoValidateGet200Response
 
 # TODO update the JSON string below
 json = "{}"

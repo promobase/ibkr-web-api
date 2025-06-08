@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.ccp_auth_response_post_request import CcpAuthResponsePostRequest
+from ibkr_web_api.models.ccp_auth_response_post_request import CcpAuthResponsePostRequest
 
 # TODO update the JSON string below
 json = "{}"

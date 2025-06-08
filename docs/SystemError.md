@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.system_error import SystemError
+from ibkr_web_api.models.system_error import SystemError
 
 # TODO update the JSON string below
 json = "{}"

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.secdef_inner_increment_rules import SecdefInnerIncrementRules
+from ibkr_web_api.models.secdef_inner_increment_rules import SecdefInnerIncrementRules
 
 # TODO update the JSON string below
 json = "{}"

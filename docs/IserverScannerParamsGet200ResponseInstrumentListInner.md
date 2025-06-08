@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.iserver_scanner_params_get200_response_instrument_list_inner import IserverScannerParamsGet200ResponseInstrumentListInner
+from ibkr_web_api.models.iserver_scanner_params_get200_response_instrument_list_inner import IserverScannerParamsGet200ResponseInstrumentListInner
 
 # TODO update the JSON string below
 json = "{}"

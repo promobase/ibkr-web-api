@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.performance import Performance
+from ibkr_web_api.models.performance import Performance
 
 # TODO update the JSON string below
 json = "{}"

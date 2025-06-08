@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.iserver_contract_rules_post200_response_rules_inner_order_defaults_inner_string_inner import IserverContractRulesPost200ResponseRulesInnerOrderDefaultsInnerStringInner
+from ibkr_web_api.models.iserver_contract_rules_post200_response_rules_inner_order_defaults_inner_string_inner import IserverContractRulesPost200ResponseRulesInnerOrderDefaultsInnerStringInner
 
 # TODO update the JSON string below
 json = "{}"

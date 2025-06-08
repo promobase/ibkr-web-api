@@ -38,7 +38,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.order_data import OrderData
+from ibkr_web_api.models.order_data import OrderData
 
 # TODO update the JSON string below
 json = "{}"

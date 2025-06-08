@@ -36,7 +36,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.iserver_contract_conid_info_and_rules_get200_response import IserverContractConidInfoAndRulesGet200Response
+from ibkr_web_api.models.iserver_contract_conid_info_and_rules_get200_response import IserverContractConidInfoAndRulesGet200Response
 
 # TODO update the JSON string below
 json = "{}"

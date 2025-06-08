@@ -1,4 +1,4 @@
-# ibkr-web-api.PortfolioAnalystApi
+# ibkr_web_api.PortfolioAnalystApi
 
 All URIs are relative to *http://localhost:5000/v1/api*
 
@@ -20,24 +20,24 @@ Returns the performance (MTM) for the given accounts, if more than one account i
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.pa_performance_post_request import PaPerformancePostRequest
-from ibkr-web-api.models.performance import Performance
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.pa_performance_post_request import PaPerformancePostRequest
+from ibkr_web_api.models.performance import Performance
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.PortfolioAnalystApi(api_client)
-    body = ibkr-web-api.PaPerformancePostRequest() # PaPerformancePostRequest | an array of account ids
+    api_instance = ibkr_web_api.PortfolioAnalystApi(api_client)
+    body = ibkr_web_api.PaPerformancePostRequest() # PaPerformancePostRequest | an array of account ids
 
     try:
         # Account Performance
@@ -90,24 +90,24 @@ Returns a summary of all account balances for the given accounts, if more than o
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.pa_summary_post_request import PaSummaryPostRequest
-from ibkr-web-api.models.summary import Summary
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.pa_summary_post_request import PaSummaryPostRequest
+from ibkr_web_api.models.summary import Summary
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.PortfolioAnalystApi(api_client)
-    body = ibkr-web-api.PaSummaryPostRequest() # PaSummaryPostRequest | an array of account ids
+    api_instance = ibkr_web_api.PortfolioAnalystApi(api_client)
+    body = ibkr_web_api.PaSummaryPostRequest() # PaSummaryPostRequest | an array of account ids
 
     try:
         # Account Balance's Summary (Deprecated)
@@ -161,24 +161,24 @@ Types of transactions include dividend payments, buy and sell transactions, tran
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.pa_transactions_post_request import PaTransactionsPostRequest
-from ibkr-web-api.models.transactions import Transactions
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.pa_transactions_post_request import PaTransactionsPostRequest
+from ibkr_web_api.models.transactions import Transactions
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.PortfolioAnalystApi(api_client)
-    body = ibkr-web-api.PaTransactionsPostRequest() # PaTransactionsPostRequest | 
+    api_instance = ibkr_web_api.PortfolioAnalystApi(api_client)
+    body = ibkr_web_api.PaTransactionsPostRequest() # PaTransactionsPostRequest | 
 
     try:
         # Position's Transaction History

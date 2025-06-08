@@ -1,4 +1,4 @@
-# ibkr-web-api.ContractApi
+# ibkr_web_api.ContractApi
 
 All URIs are relative to *http://localhost:5000/v1/api*
 
@@ -28,22 +28,22 @@ Returns supported IB Algos for contract. Must be called a second time to query t
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.iserver_contract_conid_algos_get200_response_inner import IserverContractConidAlgosGet200ResponseInner
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.iserver_contract_conid_algos_get200_response_inner import IserverContractConidAlgosGet200ResponseInner
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.ContractApi(api_client)
+    api_instance = ibkr_web_api.ContractApi(api_client)
     conid = 'conid_example' # str | IBKR contract identifier
     algos = 'algos_example' # str | List of algo ids delimited by \";\" to filter by. Max of 8 algos ids can be specified. (optional)
     add_description = 'add_description_example' # str | Whether or not to add algo descriptions to response. Set to 1 for yes, 0 for no. (optional)
@@ -105,22 +105,22 @@ For only contract info, use the endpoint /iserver/contract/{conid}/info.
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.iserver_contract_conid_info_and_rules_get200_response import IserverContractConidInfoAndRulesGet200Response
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.iserver_contract_conid_info_and_rules_get200_response import IserverContractConidInfoAndRulesGet200Response
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.ContractApi(api_client)
+    api_instance = ibkr_web_api.ContractApi(api_client)
     conid = 'conid_example' # str | IBKR contract identifier
     is_buy = True # bool | Side of the market rules apply too. Set to **true** for Buy Orders, set to **false** for Sell Orders
 
@@ -175,22 +175,22 @@ Using the Contract Identifier get contract info. You can use this to prefill you
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.contract import Contract
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.contract import Contract
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.ContractApi(api_client)
+    api_instance = ibkr_web_api.ContractApi(api_client)
     conid = 'conid_example' # str | contract id
 
     try:
@@ -243,24 +243,24 @@ Returns trading related rules for a specific contract and side. For both contrac
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.iserver_contract_rules_post200_response import IserverContractRulesPost200Response
-from ibkr-web-api.models.iserver_contract_rules_post_request import IserverContractRulesPostRequest
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.iserver_contract_rules_post200_response import IserverContractRulesPost200Response
+from ibkr_web_api.models.iserver_contract_rules_post_request import IserverContractRulesPostRequest
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.ContractApi(api_client)
-    conid = ibkr-web-api.IserverContractRulesPostRequest() # IserverContractRulesPostRequest | 
+    api_instance = ibkr_web_api.ContractApi(api_client)
+    conid = ibkr_web_api.IserverContractRulesPostRequest() # IserverContractRulesPostRequest | 
 
     try:
         # Contract Rules
@@ -312,22 +312,22 @@ Provides Contract Details of Futures, Options, Warrants, Cash and CFDs based on 
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.secdef_info import SecdefInfo
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.secdef_info import SecdefInfo
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.ContractApi(api_client)
+    api_instance = ibkr_web_api.ContractApi(api_client)
     conid = 'conid_example' # str | underlying contract id
     sectype = 'sectype_example' # str | FUT/OPT/WAR/CASH/CFD
     month = 'month_example' # str | contract month, only required for FUT/OPT/WAR in the format MMMYY, example JAN00 (optional)
@@ -393,24 +393,24 @@ If company name is specified will only receive limited response: conid, companyN
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.iserver_secdef_search_post200_response_inner import IserverSecdefSearchPost200ResponseInner
-from ibkr-web-api.models.iserver_secdef_search_post_request import IserverSecdefSearchPostRequest
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.iserver_secdef_search_post200_response_inner import IserverSecdefSearchPost200ResponseInner
+from ibkr_web_api.models.iserver_secdef_search_post_request import IserverSecdefSearchPostRequest
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.ContractApi(api_client)
-    symbol = ibkr-web-api.IserverSecdefSearchPostRequest() # IserverSecdefSearchPostRequest | Symbol or Company Name to be searched
+    api_instance = ibkr_web_api.ContractApi(api_client)
+    symbol = ibkr_web_api.IserverSecdefSearchPostRequest() # IserverSecdefSearchPostRequest | Symbol or Company Name to be searched
 
     try:
         # Search by Symbol or Name
@@ -463,22 +463,22 @@ Query strikes for Options/Warrants. For the conid of the underlying contract, av
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.iserver_secdef_strikes_get200_response import IserverSecdefStrikesGet200Response
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.iserver_secdef_strikes_get200_response import IserverSecdefStrikesGet200Response
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.ContractApi(api_client)
+    api_instance = ibkr_web_api.ContractApi(api_client)
     conid = 'conid_example' # str | contract id of the underlying contract
     sectype = 'sectype_example' # str | OPT/WAR
     month = 'month_example' # str | contract month
@@ -538,22 +538,22 @@ Returns a list of non-expired future contracts for given symbol(s)
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.trsrv_futures_get200_response import TrsrvFuturesGet200Response
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.trsrv_futures_get200_response import TrsrvFuturesGet200Response
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.ContractApi(api_client)
+    api_instance = ibkr_web_api.ContractApi(api_client)
     symbols = 'symbols_example' # str | list of case-sensitive symbols separated by comma
 
     try:
@@ -607,24 +607,24 @@ Returns a list of security definitions for the given conids
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.secdef_inner import SecdefInner
-from ibkr-web-api.models.trsrv_secdef_post_request import TrsrvSecdefPostRequest
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.secdef_inner import SecdefInner
+from ibkr_web_api.models.trsrv_secdef_post_request import TrsrvSecdefPostRequest
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.ContractApi(api_client)
-    body = ibkr-web-api.TrsrvSecdefPostRequest() # TrsrvSecdefPostRequest | request body
+    api_instance = ibkr_web_api.ContractApi(api_client)
+    body = ibkr_web_api.TrsrvSecdefPostRequest() # TrsrvSecdefPostRequest | request body
 
     try:
         # Secdef by Conid
@@ -676,22 +676,22 @@ Returns the trading schedule up to a month for the requested contract
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.trsrv_secdef_schedule_get200_response import TrsrvSecdefScheduleGet200Response
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.trsrv_secdef_schedule_get200_response import TrsrvSecdefScheduleGet200Response
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.ContractApi(api_client)
+    api_instance = ibkr_web_api.ContractApi(api_client)
     asset_class = 'asset_class_example' # str | specify the asset class of the contract. Available values-- Stock: STK, Option: OPT, Future: FUT, Contract For Difference: CFD, Warrant: WAR, Forex: SWP, Mutual Fund: FND, Bond: BND, Inter-Commodity Spreads: ICS 
     symbol = 'symbol_example' # str | Underlying Symbol for specified contract, for example 'AAPL' for US Stock - Apple Inc.
     exchange = 'exchange_example' # str | Native exchange for contract, for example 'NASDAQ' for US Stock - Apple Inc. (optional)
@@ -750,22 +750,22 @@ Returns an object contains all stock contracts for given symbol(s)
 
 
 ```python
-import ibkr-web-api
-from ibkr-web-api.models.trsrv_stocks_get200_response import TrsrvStocksGet200Response
-from ibkr-web-api.rest import ApiException
+import ibkr_web_api
+from ibkr_web_api.models.trsrv_stocks_get200_response import TrsrvStocksGet200Response
+from ibkr_web_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = ibkr-web-api.Configuration(
+configuration = ibkr_web_api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with ibkr-web-api.ApiClient(configuration) as api_client:
+with ibkr_web_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = ibkr-web-api.ContractApi(api_client)
+    api_instance = ibkr_web_api.ContractApi(api_client)
     symbols = 'symbols_example' # str | list of upper-sensitive symbols separated by comma
 
     try:

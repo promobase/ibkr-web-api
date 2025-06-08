@@ -30,7 +30,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.ledger import Ledger
+from ibkr_web_api.models.ledger import Ledger
 
 # TODO update the JSON string below
 json = "{}"

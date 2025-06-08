@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.allocation_inner_sector_short import AllocationInnerSectorShort
+from ibkr_web_api.models.allocation_inner_sector_short import AllocationInnerSectorShort
 
 # TODO update the JSON string below
 json = "{}"

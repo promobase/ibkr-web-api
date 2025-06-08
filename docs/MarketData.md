@@ -110,7 +110,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.market_data import MarketData
+from ibkr_web_api.models.market_data import MarketData
 
 # TODO update the JSON string below
 json = "{}"

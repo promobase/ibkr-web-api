@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.iserver_account_account_id_order_whatif_post200_response_amount import IserverAccountAccountIdOrderWhatifPost200ResponseAmount
+from ibkr_web_api.models.iserver_account_account_id_order_whatif_post200_response_amount import IserverAccountAccountIdOrderWhatifPost200ResponseAmount
 
 # TODO update the JSON string below
 json = "{}"

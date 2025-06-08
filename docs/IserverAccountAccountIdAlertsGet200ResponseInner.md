@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from ibkr-web-api.models.iserver_account_account_id_alerts_get200_response_inner import IserverAccountAccountIdAlertsGet200ResponseInner
+from ibkr_web_api.models.iserver_account_account_id_alerts_get200_response_inner import IserverAccountAccountIdAlertsGet200ResponseInner
 
 # TODO update the JSON string below
 json = "{}"
