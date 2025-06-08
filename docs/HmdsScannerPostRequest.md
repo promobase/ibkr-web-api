@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.hmds_scanner_post_request import HmdsScannerPostRequest
+from ibkr-web-api.models.hmds_scanner_post_request import HmdsScannerPostRequest
 
 # TODO update the JSON string below
 json = "{}"

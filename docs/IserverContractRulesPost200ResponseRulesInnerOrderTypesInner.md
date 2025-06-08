@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.iserver_contract_rules_post200_response_rules_inner_order_types_inner import IserverContractRulesPost200ResponseRulesInnerOrderTypesInner
+from ibkr-web-api.models.iserver_contract_rules_post200_response_rules_inner_order_types_inner import IserverContractRulesPost200ResponseRulesInnerOrderTypesInner
 
 # TODO update the JSON string below
 json = "{}"

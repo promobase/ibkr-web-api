@@ -52,7 +52,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.order_status import OrderStatus
+from ibkr-web-api.models.order_status import OrderStatus
 
 # TODO update the JSON string below
 json = "{}"

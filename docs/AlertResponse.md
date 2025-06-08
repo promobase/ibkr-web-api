@@ -34,7 +34,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.alert_response import AlertResponse
+from ibkr-web-api.models.alert_response import AlertResponse
 
 # TODO update the JSON string below
 json = "{}"

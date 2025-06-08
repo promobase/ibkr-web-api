@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.scanner_result import ScannerResult
+from ibkr-web-api.models.scanner_result import ScannerResult
 
 # TODO update the JSON string below
 json = "{}"

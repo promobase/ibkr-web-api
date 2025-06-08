@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.alert_request_conditions_inner import AlertRequestConditionsInner
+from ibkr-web-api.models.alert_request_conditions_inner import AlertRequestConditionsInner
 
 # TODO update the JSON string below
 json = "{}"

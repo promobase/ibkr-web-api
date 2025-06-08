@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.iserver_scanner_params_get200_response_location_tree_inner_locations_inner import IserverScannerParamsGet200ResponseLocationTreeInnerLocationsInner
+from ibkr-web-api.models.iserver_scanner_params_get200_response_location_tree_inner_locations_inner import IserverScannerParamsGet200ResponseLocationTreeInnerLocationsInner
 
 # TODO update the JSON string below
 json = "{}"

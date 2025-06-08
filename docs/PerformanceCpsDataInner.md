@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.performance_cps_data_inner import PerformanceCpsDataInner
+from ibkr-web-api.models.performance_cps_data_inner import PerformanceCpsDataInner
 
 # TODO update the JSON string below
 json = "{}"

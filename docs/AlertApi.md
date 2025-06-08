@@ -1,4 +1,4 @@
-# openapi_client.AlertApi
+# ibkr-web-api.AlertApi
 
 All URIs are relative to *http://localhost:5000/v1/api*
 
@@ -23,25 +23,25 @@ Please note, if alertId is 0, it will activate/deactivate all alerts
 
 
 ```python
-import openapi_client
-from openapi_client.models.iserver_account_account_id_alert_activate_post200_response import IserverAccountAccountIdAlertActivatePost200Response
-from openapi_client.models.iserver_account_account_id_alert_activate_post_request import IserverAccountAccountIdAlertActivatePostRequest
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.iserver_account_account_id_alert_activate_post200_response import IserverAccountAccountIdAlertActivatePost200Response
+from ibkr-web-api.models.iserver_account_account_id_alert_activate_post_request import IserverAccountAccountIdAlertActivatePostRequest
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AlertApi(api_client)
+    api_instance = ibkr-web-api.AlertApi(api_client)
     account_id = 'account_id_example' # str | account id
-    body = openapi_client.IserverAccountAccountIdAlertActivatePostRequest() # IserverAccountAccountIdAlertActivatePostRequest | order request info
+    body = ibkr-web-api.IserverAccountAccountIdAlertActivatePostRequest() # IserverAccountAccountIdAlertActivatePostRequest | order request info
 
     try:
         # Activate or deactivate an alert
@@ -94,22 +94,22 @@ Please be careful, if alertId is 0, it will delete all alerts
 
 
 ```python
-import openapi_client
-from openapi_client.models.iserver_account_account_id_alert_activate_post200_response import IserverAccountAccountIdAlertActivatePost200Response
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.iserver_account_account_id_alert_activate_post200_response import IserverAccountAccountIdAlertActivatePost200Response
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AlertApi(api_client)
+    api_instance = ibkr-web-api.AlertApi(api_client)
     account_id = 'account_id_example' # str | account id
     alert_id = 'alert_id_example' # str | alert id
 
@@ -165,25 +165,25 @@ Please note here, DO NOT pass orderId when creating a new alert, toolId is only 
 
 
 ```python
-import openapi_client
-from openapi_client.models.alert_request import AlertRequest
-from openapi_client.models.iserver_account_account_id_alert_post200_response import IserverAccountAccountIdAlertPost200Response
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.alert_request import AlertRequest
+from ibkr-web-api.models.iserver_account_account_id_alert_post200_response import IserverAccountAccountIdAlertPost200Response
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AlertApi(api_client)
+    api_instance = ibkr-web-api.AlertApi(api_client)
     account_id = 'account_id_example' # str | account id
-    body = openapi_client.AlertRequest() # AlertRequest | alert info
+    body = ibkr-web-api.AlertRequest() # AlertRequest | alert info
 
     try:
         # Create or modify alert
@@ -236,22 +236,22 @@ The response will contain both active and inactive alerts, but it won't have MTA
 
 
 ```python
-import openapi_client
-from openapi_client.models.iserver_account_account_id_alerts_get200_response_inner import IserverAccountAccountIdAlertsGet200ResponseInner
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.iserver_account_account_id_alerts_get200_response_inner import IserverAccountAccountIdAlertsGet200ResponseInner
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AlertApi(api_client)
+    api_instance = ibkr-web-api.AlertApi(api_client)
     account_id = 'account_id_example' # str | account id
 
     try:
@@ -306,22 +306,22 @@ The order_id in the response is the alert id.
 
 
 ```python
-import openapi_client
-from openapi_client.models.alert_response import AlertResponse
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.alert_response import AlertResponse
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AlertApi(api_client)
+    api_instance = ibkr-web-api.AlertApi(api_client)
     id = 'id_example' # str | alert id
 
     try:
@@ -378,22 +378,22 @@ it will reset MTA to default. See [here](https://www.interactivebrokers.com/en/s
 
 
 ```python
-import openapi_client
-from openapi_client.models.alert_response import AlertResponse
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.alert_response import AlertResponse
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AlertApi(api_client)
+    api_instance = ibkr-web-api.AlertApi(api_client)
 
     try:
         # Get MTA alert

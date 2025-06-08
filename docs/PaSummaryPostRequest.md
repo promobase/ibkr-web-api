@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.pa_summary_post_request import PaSummaryPostRequest
+from ibkr-web-api.models.pa_summary_post_request import PaSummaryPostRequest
 
 # TODO update the JSON string below
 json = "{}"

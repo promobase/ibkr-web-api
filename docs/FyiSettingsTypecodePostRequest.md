@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.fyi_settings_typecode_post_request import FyiSettingsTypecodePostRequest
+from ibkr-web-api.models.fyi_settings_typecode_post_request import FyiSettingsTypecodePostRequest
 
 # TODO update the JSON string below
 json = "{}"

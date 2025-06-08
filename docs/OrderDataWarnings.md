@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.order_data_warnings import OrderDataWarnings
+from ibkr-web-api.models.order_data_warnings import OrderDataWarnings
 
 # TODO update the JSON string below
 json = "{}"

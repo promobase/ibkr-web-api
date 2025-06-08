@@ -30,7 +30,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.ledger import Ledger
+from ibkr-web-api.models.ledger import Ledger
 
 # TODO update the JSON string below
 json = "{}"

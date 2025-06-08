@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.iserver_account_orders_get200_response import IserverAccountOrdersGet200Response
+from ibkr-web-api.models.iserver_account_orders_get200_response import IserverAccountOrdersGet200Response
 
 # TODO update the JSON string below
 json = "{}"

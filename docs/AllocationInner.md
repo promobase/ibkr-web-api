@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.allocation_inner import AllocationInner
+from ibkr-web-api.models.allocation_inner import AllocationInner
 
 # TODO update the JSON string below
 json = "{}"

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.fyi_disclaimer_typecode_put200_response import FyiDisclaimerTypecodePut200Response
+from ibkr-web-api.models.fyi_disclaimer_typecode_put200_response import FyiDisclaimerTypecodePut200Response
 
 # TODO update the JSON string below
 json = "{}"

@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.portfolio_subaccounts2_get200_response import PortfolioSubaccounts2Get200Response
+from ibkr-web-api.models.portfolio_subaccounts2_get200_response import PortfolioSubaccounts2Get200Response
 
 # TODO update the JSON string below
 json = "{}"

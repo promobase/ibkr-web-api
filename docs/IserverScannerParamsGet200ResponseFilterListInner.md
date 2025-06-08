@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.iserver_scanner_params_get200_response_filter_list_inner import IserverScannerParamsGet200ResponseFilterListInner
+from ibkr-web-api.models.iserver_scanner_params_get200_response_filter_list_inner import IserverScannerParamsGet200ResponseFilterListInner
 
 # TODO update the JSON string below
 json = "{}"

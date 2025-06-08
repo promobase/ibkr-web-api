@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.futures_inner import FuturesInner
+from ibkr-web-api.models.futures_inner import FuturesInner
 
 # TODO update the JSON string below
 json = "{}"

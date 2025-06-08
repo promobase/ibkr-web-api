@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.performance_tpps import PerformanceTpps
+from ibkr-web-api.models.performance_tpps import PerformanceTpps
 
 # TODO update the JSON string below
 json = "{}"

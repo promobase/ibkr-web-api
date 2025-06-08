@@ -29,7 +29,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.order import Order
+from ibkr-web-api.models.order import Order
 
 # TODO update the JSON string below
 json = "{}"

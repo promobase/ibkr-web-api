@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.logout_post200_response import LogoutPost200Response
+from ibkr-web-api.models.logout_post200_response import LogoutPost200Response
 
 # TODO update the JSON string below
 json = "{}"

@@ -1,4 +1,4 @@
-# openapi_client.CCPBetaApi
+# ibkr-web-api.CCPBetaApi
 
 All URIs are relative to *http://localhost:5000/v1/api*
 
@@ -27,22 +27,22 @@ Provides the list of tradeable accounts
 
 
 ```python
-import openapi_client
-from openapi_client.models.ccp_account_get200_response import CcpAccountGet200Response
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.ccp_account_get200_response import CcpAccountGet200Response
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CCPBetaApi(api_client)
+    api_instance = ibkr-web-api.CCPBetaApi(api_client)
 
     try:
         # Brokerage Accounts
@@ -91,22 +91,22 @@ Initiate a brokerage session to CCP. Only one brokerage session type can run at 
 
 
 ```python
-import openapi_client
-from openapi_client.models.ccp_auth_init_post200_response import CcpAuthInitPost200Response
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.ccp_auth_init_post200_response import CcpAuthInitPost200Response
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CCPBetaApi(api_client)
+    api_instance = ibkr-web-api.CCPBetaApi(api_client)
     compete = True # bool | Allow competing CCP session to run (optional)
     locale = 'locale_example' # str | Concatenate value for language and region, set to \\\"en_US\\\" (optional)
     mac = 'mac_example' # str | Local MAC Address (optional)
@@ -169,24 +169,24 @@ Session Token Authentication
 
 
 ```python
-import openapi_client
-from openapi_client.models.ccp_auth_response_post200_response import CcpAuthResponsePost200Response
-from openapi_client.models.ccp_auth_response_post_request import CcpAuthResponsePostRequest
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.ccp_auth_response_post200_response import CcpAuthResponsePost200Response
+from ibkr-web-api.models.ccp_auth_response_post_request import CcpAuthResponsePostRequest
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CCPBetaApi(api_client)
-    auth = openapi_client.CcpAuthResponsePostRequest() # CcpAuthResponsePostRequest |  (optional)
+    api_instance = ibkr-web-api.CCPBetaApi(api_client)
+    auth = ibkr-web-api.CcpAuthResponsePostRequest() # CcpAuthResponsePostRequest |  (optional)
 
     try:
         # Complete CCP Session
@@ -241,22 +241,22 @@ Sends an Order cancellation request. The status of the order can be queried thro
 
 
 ```python
-import openapi_client
-from openapi_client.models.order_data import OrderData
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.order_data import OrderData
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CCPBetaApi(api_client)
+    api_instance = ibkr-web-api.CCPBetaApi(api_client)
     acct = 'acct_example' # str | Account Number
     id = 3.4 # float | Order Identifier of original submit order
 
@@ -314,22 +314,22 @@ Submits an Order.
 
 
 ```python
-import openapi_client
-from openapi_client.models.order_data import OrderData
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.order_data import OrderData
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CCPBetaApi(api_client)
+    api_instance = ibkr-web-api.CCPBetaApi(api_client)
     acct = 'acct_example' # str | User Account
     conid = 3.4 # float | Contract identifier from IBKR's database.
     ccy = 'ccy_example' # str | Contract Currency
@@ -402,22 +402,22 @@ Updates an Order. Updating an order requires the same arguments as placing an or
 
 
 ```python
-import openapi_client
-from openapi_client.models.order_data import OrderData
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.order_data import OrderData
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CCPBetaApi(api_client)
+    api_instance = ibkr-web-api.CCPBetaApi(api_client)
     acct = 'acct_example' # str | User Account
     id = 3.4 # float | Order ID to be modified
 
@@ -474,22 +474,22 @@ Get status for all orders
 
 
 ```python
-import openapi_client
-from openapi_client.models.ccp_orders_get200_response import CcpOrdersGet200Response
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.ccp_orders_get200_response import CcpOrdersGet200Response
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CCPBetaApi(api_client)
+    api_instance = ibkr-web-api.CCPBetaApi(api_client)
     acct = 'acct_example' # str | User Account
     cancelled = True # bool | Return only Rejected or Cancelled orders since today midnight (optional)
 
@@ -547,22 +547,22 @@ List of positions
 
 
 ```python
-import openapi_client
-from openapi_client.models.position_data import PositionData
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.position_data import PositionData
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CCPBetaApi(api_client)
+    api_instance = ibkr-web-api.CCPBetaApi(api_client)
 
     try:
         # Positions
@@ -613,22 +613,22 @@ Provide the current CCP session status. When using the Gateway this endpoint wil
 
 
 ```python
-import openapi_client
-from openapi_client.models.ccp_status_get200_response import CcpStatusGet200Response
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.ccp_status_get200_response import CcpStatusGet200Response
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CCPBetaApi(api_client)
+    api_instance = ibkr-web-api.CCPBetaApi(api_client)
 
     try:
         # CCP Status
@@ -680,22 +680,22 @@ Get a list of Trades, by default, the list is from today midnight to Date.now().
 
 
 ```python
-import openapi_client
-from openapi_client.models.ccp_orders_get200_response import CcpOrdersGet200Response
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.ccp_orders_get200_response import CcpOrdersGet200Response
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.CCPBetaApi(api_client)
+    api_instance = ibkr-web-api.CCPBetaApi(api_client)
     var_from = 'var_from_example' # str | From Date (YYYYMMDD-HH:mm:ss) or offset (-1,-2,-3..) (optional)
     to = 'to_example' # str | To Date (YYYYMMDD-HH:mm:ss) or offset (-1,-2,-3..). To value should be bigger than from value.  (optional)
 

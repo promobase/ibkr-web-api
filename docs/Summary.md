@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.summary import Summary
+from ibkr-web-api.models.summary import Summary
 
 # TODO update the JSON string below
 json = "{}"

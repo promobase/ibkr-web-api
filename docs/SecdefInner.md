@@ -36,7 +36,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.secdef_inner import SecdefInner
+from ibkr-web-api.models.secdef_inner import SecdefInner
 
 # TODO update the JSON string below
 json = "{}"

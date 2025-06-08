@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.performance_cps import PerformanceCps
+from ibkr-web-api.models.performance_cps import PerformanceCps
 
 # TODO update the JSON string below
 json = "{}"

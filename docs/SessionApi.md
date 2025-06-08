@@ -1,4 +1,4 @@
-# openapi_client.SessionApi
+# ibkr-web-api.SessionApi
 
 All URIs are relative to *http://localhost:5000/v1/api*
 
@@ -22,22 +22,22 @@ Current Authentication status to the Brokerage system. Market Data and Trading i
 
 
 ```python
-import openapi_client
-from openapi_client.models.auth_status import AuthStatus
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.auth_status import AuthStatus
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SessionApi(api_client)
+    api_instance = ibkr-web-api.SessionApi(api_client)
 
     try:
         # Authentication Status
@@ -87,22 +87,22 @@ When using the CP Gateway, this endpoint provides a way to reauthenticate to the
 
 
 ```python
-import openapi_client
-from openapi_client.models.auth_status import AuthStatus
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.auth_status import AuthStatus
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SessionApi(api_client)
+    api_instance = ibkr-web-api.SessionApi(api_client)
 
     try:
         # Tries to re-authenticate to Brokerage
@@ -151,22 +151,22 @@ Logs the user out of the gateway session. Any further activity requires re-authe
 
 
 ```python
-import openapi_client
-from openapi_client.models.logout_post200_response import LogoutPost200Response
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.logout_post200_response import LogoutPost200Response
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SessionApi(api_client)
+    api_instance = ibkr-web-api.SessionApi(api_client)
 
     try:
         # Ends the current session
@@ -215,22 +215,22 @@ Validates the current session for the SSO user
 
 
 ```python
-import openapi_client
-from openapi_client.models.sso_validate_get200_response import SsoValidateGet200Response
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.sso_validate_get200_response import SsoValidateGet200Response
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SessionApi(api_client)
+    api_instance = ibkr-web-api.SessionApi(api_client)
 
     try:
         # Validate SSO
@@ -281,21 +281,21 @@ If the gateway has not received any requests for several minutes an open session
 
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SessionApi(api_client)
+    api_instance = ibkr-web-api.SessionApi(api_client)
 
     try:
         # Ping the server to keep the session open

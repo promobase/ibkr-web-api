@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.trsrv_secdef_schedule_get200_response_schedules_inner import TrsrvSecdefScheduleGet200ResponseSchedulesInner
+from ibkr-web-api.models.trsrv_secdef_schedule_get200_response_schedules_inner import TrsrvSecdefScheduleGet200ResponseSchedulesInner
 
 # TODO update the JSON string below
 json = "{}"

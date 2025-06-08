@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.scanner_params_filter_inner import ScannerParamsFilterInner
+from ibkr-web-api.models.scanner_params_filter_inner import ScannerParamsFilterInner
 
 # TODO update the JSON string below
 json = "{}"

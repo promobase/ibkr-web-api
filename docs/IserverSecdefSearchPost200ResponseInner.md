@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.iserver_secdef_search_post200_response_inner import IserverSecdefSearchPost200ResponseInner
+from ibkr-web-api.models.iserver_secdef_search_post200_response_inner import IserverSecdefSearchPost200ResponseInner
 
 # TODO update the JSON string below
 json = "{}"

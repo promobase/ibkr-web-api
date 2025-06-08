@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.calendar_request_filters import CalendarRequestFilters
+from ibkr-web-api.models.calendar_request_filters import CalendarRequestFilters
 
 # TODO update the JSON string below
 json = "{}"

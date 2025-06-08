@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.alert_request import AlertRequest
+from ibkr-web-api.models.alert_request import AlertRequest
 
 # TODO update the JSON string below
 json = "{}"

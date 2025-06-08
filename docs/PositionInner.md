@@ -47,7 +47,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.position_inner import PositionInner
+from ibkr-web-api.models.position_inner import PositionInner
 
 # TODO update the JSON string below
 json = "{}"

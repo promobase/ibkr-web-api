@@ -138,7 +138,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.portfolio_account_id_summary_get200_response import PortfolioAccountIdSummaryGet200Response
+from ibkr-web-api.models.portfolio_account_id_summary_get200_response import PortfolioAccountIdSummaryGet200Response
 
 # TODO update the JSON string below
 json = "{}"

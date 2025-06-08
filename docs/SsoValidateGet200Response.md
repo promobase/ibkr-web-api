@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.sso_validate_get200_response import SsoValidateGet200Response
+from ibkr-web-api.models.sso_validate_get200_response import SsoValidateGet200Response
 
 # TODO update the JSON string below
 json = "{}"

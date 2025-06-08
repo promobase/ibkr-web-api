@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.portfolio_subaccounts2_get200_response_metadata import PortfolioSubaccounts2Get200ResponseMetadata
+from ibkr-web-api.models.portfolio_subaccounts2_get200_response_metadata import PortfolioSubaccounts2Get200ResponseMetadata
 
 # TODO update the JSON string below
 json = "{}"

@@ -20,7 +20,7 @@ from setuptools import setup, find_packages  # noqa: H301
 #
 # prerequisite: setuptools
 # http://pypi.python.org/pypi/setuptools
-NAME = "openapi-client"
+NAME = "ibkr-web-api"
 VERSION = "1.0.0"
 PYTHON_REQUIRES = ">= 3.9"
 REQUIRES = [
@@ -45,5 +45,5 @@ setup(
     long_description="""\
     Client Poral Web API
     """,  # noqa: E501
-    package_data={"openapi_client": ["py.typed"]},
+    package_data={"ibkr-web-api": ["py.typed"]},
 )

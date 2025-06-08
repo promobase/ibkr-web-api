@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.events_inner import EventsInner
+from ibkr-web-api.models.events_inner import EventsInner
 
 # TODO update the JSON string below
 json = "{}"

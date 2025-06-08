@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.history_data_data_inner import HistoryDataDataInner
+from ibkr-web-api.models.history_data_data_inner import HistoryDataDataInner
 
 # TODO update the JSON string below
 json = "{}"

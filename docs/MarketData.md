@@ -110,7 +110,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.market_data import MarketData
+from ibkr-web-api.models.market_data import MarketData
 
 # TODO update the JSON string below
 json = "{}"

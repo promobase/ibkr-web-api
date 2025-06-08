@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.allocation_inner_asset_class_short import AllocationInnerAssetClassShort
+from ibkr-web-api.models.allocation_inner_asset_class_short import AllocationInnerAssetClassShort
 
 # TODO update the JSON string below
 json = "{}"

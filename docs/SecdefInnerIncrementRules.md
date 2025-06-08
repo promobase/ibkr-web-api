@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.secdef_inner_increment_rules import SecdefInnerIncrementRules
+from ibkr-web-api.models.secdef_inner_increment_rules import SecdefInnerIncrementRules
 
 # TODO update the JSON string below
 json = "{}"

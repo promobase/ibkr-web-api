@@ -1,4 +1,4 @@
-# openapi_client.MarketDataApi
+# ibkr-web-api.MarketDataApi
 
 All URIs are relative to *http://localhost:5000/v1/api*
 
@@ -23,22 +23,22 @@ Using a direct connection to the market data farm, will provide a list of histor
 
 
 ```python
-import openapi_client
-from openapi_client.models.history_result import HistoryResult
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.history_result import HistoryResult
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MarketDataApi(api_client)
+    api_instance = ibkr-web-api.MarketDataApi(api_client)
     conid = 56 # int | contract id
     period = 'period_example' # str | Time period for history request.    * min: Minutes   * h: Hours   * d: Days   * w: Weeks   * m: Months   * y: Years 
     bar = 'bar_example' # str | Duration of time for each candlestick bar.   * min: Minutes   * h: Hours   * d: Days   * w: Weeks   * m: Months  (optional)
@@ -99,22 +99,22 @@ Cancel market data for given conid. To cancel all market data request(s), see /i
 
 
 ```python
-import openapi_client
-from openapi_client.models.iserver_marketdata_conid_unsubscribe_get200_response import IserverMarketdataConidUnsubscribeGet200Response
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.iserver_marketdata_conid_unsubscribe_get200_response import IserverMarketdataConidUnsubscribeGet200Response
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MarketDataApi(api_client)
+    api_instance = ibkr-web-api.MarketDataApi(api_client)
     conid = 'conid_example' # str | contract id
 
     try:
@@ -172,22 +172,22 @@ e.g. period =1y with bar =1w returns 52 data points (Max of 1000 data points sup
 
 
 ```python
-import openapi_client
-from openapi_client.models.history_data import HistoryData
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.history_data import HistoryData
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MarketDataApi(api_client)
+    api_instance = ibkr-web-api.MarketDataApi(api_client)
     conid = 'conid_example' # str | contract id
     period = 'period_example' # str | available time period-- {1-30}min, {1-8}h, {1-1000}d, {1-792}w, {1-182}m, {1-15}y
     exchange = 'exchange_example' # str | Exchange of the conid (e.g. ISLAND, NYSE, etc.). Default value is empty which corresponds to primary exchange of the conid. (optional)
@@ -257,22 +257,22 @@ To receive streaming market data the endpoint /ws can be used. Refer to [Streami
 
 
 ```python
-import openapi_client
-from openapi_client.models.iserver_marketdata_snapshot_get200_response_inner import IserverMarketdataSnapshotGet200ResponseInner
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.iserver_marketdata_snapshot_get200_response_inner import IserverMarketdataSnapshotGet200ResponseInner
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MarketDataApi(api_client)
+    api_instance = ibkr-web-api.MarketDataApi(api_client)
     conids = 'conids_example' # str | list of conids separated by comma
     since = 56 # int | time period since which updates are required. uses epoch time with milliseconds. (optional)
     fields = 'fields_example' # str | list of fields separated by comma (optional)
@@ -331,22 +331,22 @@ Cancel all market data request(s). To cancel market data for given conid, see /i
 
 
 ```python
-import openapi_client
-from openapi_client.models.iserver_marketdata_unsubscribeall_get200_response import IserverMarketdataUnsubscribeallGet200Response
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.iserver_marketdata_unsubscribeall_get200_response import IserverMarketdataUnsubscribeallGet200Response
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MarketDataApi(api_client)
+    api_instance = ibkr-web-api.MarketDataApi(api_client)
 
     try:
         # Market Data Cancel (All)
@@ -400,22 +400,22 @@ To receive streaming market data the endpoint /ws can be used. Refer to [Streami
 
 
 ```python
-import openapi_client
-from openapi_client.models.market_data import MarketData
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.market_data import MarketData
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.MarketDataApi(api_client)
+    api_instance = ibkr-web-api.MarketDataApi(api_client)
     conids = 'conids_example' # str | List of conids comma separated. Optional exchange and instrument type can be specified.   * conid: IBKR Contract Identifier   * exchange: Exchange or venue   * instrType: Instrument Type supported values: CS (Stocks), OPT (Options), FUT (Futures), FOP (Future Options), WAR (Warrants), BOND (Bonds), FUND (Mutual Funds), CASH (Forex), CFD (Contract for difference), IND (Index) 
     fields = 'fields_example' # str | list of fields separated by comma (optional)
 

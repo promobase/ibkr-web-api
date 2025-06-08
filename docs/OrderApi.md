@@ -1,4 +1,4 @@
-# openapi_client.OrderApi
+# ibkr-web-api.OrderApi
 
 All URIs are relative to *http://localhost:5000/v1/api*
 
@@ -27,22 +27,22 @@ Cancels an open order. Must call /iserver/accounts endpoint prior to cancelling 
 
 
 ```python
-import openapi_client
-from openapi_client.models.iserver_account_account_id_order_order_id_delete200_response import IserverAccountAccountIdOrderOrderIdDelete200Response
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.iserver_account_account_id_order_order_id_delete200_response import IserverAccountAccountIdOrderOrderIdDelete200Response
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.OrderApi(api_client)
+    api_instance = ibkr-web-api.OrderApi(api_client)
     account_id = 'account_id_example' # str | account id, or fa group if deleting a group order
     order_id = 'order_id_example' # str | Customer order id, use /iservers/account/orders endpoint to query orderId.
 
@@ -97,26 +97,26 @@ Modifies an open order. Must call /iserver/accounts endpoint prior to modifying 
 
 
 ```python
-import openapi_client
-from openapi_client.models.iserver_account_account_id_order_order_id_post200_response_inner import IserverAccountAccountIdOrderOrderIdPost200ResponseInner
-from openapi_client.models.modify_order import ModifyOrder
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.iserver_account_account_id_order_order_id_post200_response_inner import IserverAccountAccountIdOrderOrderIdPost200ResponseInner
+from ibkr-web-api.models.modify_order import ModifyOrder
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.OrderApi(api_client)
+    api_instance = ibkr-web-api.OrderApi(api_client)
     account_id = 'account_id_example' # str | account id, or fa group if modifying a group order
     order_id = 'order_id_example' # str | Customer order id, use /iservers/account/orders endpoint to query orderId.
-    body = openapi_client.ModifyOrder() # ModifyOrder | modify-order request
+    body = ibkr-web-api.ModifyOrder() # ModifyOrder | modify-order request
 
     try:
         # Modify Order
@@ -175,25 +175,25 @@ successfully. You can use "/iserver/reply/{replyid}" endpoint to answer question
 
 
 ```python
-import openapi_client
-from openapi_client.models.iserver_account_account_id_order_post200_response_inner import IserverAccountAccountIdOrderPost200ResponseInner
-from openapi_client.models.order_request import OrderRequest
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.iserver_account_account_id_order_post200_response_inner import IserverAccountAccountIdOrderPost200ResponseInner
+from ibkr-web-api.models.order_request import OrderRequest
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.OrderApi(api_client)
+    api_instance = ibkr-web-api.OrderApi(api_client)
     account_id = 'account_id_example' # str | account id
-    body = openapi_client.OrderRequest() # OrderRequest | order request info
+    body = ibkr-web-api.OrderRequest() # OrderRequest | order request info
 
     try:
         # Place Order (Deprecated)
@@ -250,25 +250,25 @@ commission information in the response.
 
 
 ```python
-import openapi_client
-from openapi_client.models.iserver_account_account_id_order_whatif_post200_response import IserverAccountAccountIdOrderWhatifPost200Response
-from openapi_client.models.order_request import OrderRequest
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.iserver_account_account_id_order_whatif_post200_response import IserverAccountAccountIdOrderWhatifPost200Response
+from ibkr-web-api.models.order_request import OrderRequest
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.OrderApi(api_client)
+    api_instance = ibkr-web-api.OrderApi(api_client)
     account_id = 'account_id_example' # str | account id
-    body = openapi_client.OrderRequest() # OrderRequest | order info
+    body = ibkr-web-api.OrderRequest() # OrderRequest | order info
 
     try:
         # Preview Order (Deprecated)
@@ -329,25 +329,25 @@ CP WEB API supports various advanced orderTypes, for additional details and exam
 
 
 ```python
-import openapi_client
-from openapi_client.models.iserver_account_account_id_order_post200_response_inner import IserverAccountAccountIdOrderPost200ResponseInner
-from openapi_client.models.iserver_account_account_id_orders_post_request import IserverAccountAccountIdOrdersPostRequest
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.iserver_account_account_id_order_post200_response_inner import IserverAccountAccountIdOrderPost200ResponseInner
+from ibkr-web-api.models.iserver_account_account_id_orders_post_request import IserverAccountAccountIdOrdersPostRequest
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.OrderApi(api_client)
+    api_instance = ibkr-web-api.OrderApi(api_client)
     account_id = 'account_id_example' # str | account id
-    body = openapi_client.IserverAccountAccountIdOrdersPostRequest() # IserverAccountAccountIdOrdersPostRequest | order request info
+    body = ibkr-web-api.IserverAccountAccountIdOrdersPostRequest() # IserverAccountAccountIdOrdersPostRequest | order request info
 
     try:
         # Place Orders
@@ -402,25 +402,25 @@ commission information in the response. Also supports bracket orders.
 
 
 ```python
-import openapi_client
-from openapi_client.models.iserver_account_account_id_order_whatif_post200_response import IserverAccountAccountIdOrderWhatifPost200Response
-from openapi_client.models.iserver_account_account_id_orders_post_request import IserverAccountAccountIdOrdersPostRequest
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.iserver_account_account_id_order_whatif_post200_response import IserverAccountAccountIdOrderWhatifPost200Response
+from ibkr-web-api.models.iserver_account_account_id_orders_post_request import IserverAccountAccountIdOrdersPostRequest
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.OrderApi(api_client)
+    api_instance = ibkr-web-api.OrderApi(api_client)
     account_id = 'account_id_example' # str | account id
-    body = openapi_client.IserverAccountAccountIdOrdersPostRequest() # IserverAccountAccountIdOrdersPostRequest | order info
+    body = ibkr-web-api.IserverAccountAccountIdOrdersPostRequest() # IserverAccountAccountIdOrdersPostRequest | order info
 
     try:
         # Preview Orders
@@ -471,22 +471,22 @@ Order Status
 
 
 ```python
-import openapi_client
-from openapi_client.models.order_status import OrderStatus
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.order_status import OrderStatus
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.OrderApi(api_client)
+    api_instance = ibkr-web-api.OrderApi(api_client)
     order_id = 'order_id_example' # str | Customer order id, use /iservers/account/orders endpoint to query orderId.
 
     try:
@@ -541,25 +541,25 @@ More information about groups can be found in the [TWS Users' Guide:](https://gu
 
 
 ```python
-import openapi_client
-from openapi_client.models.iserver_account_account_id_order_post200_response_inner import IserverAccountAccountIdOrderPost200ResponseInner
-from openapi_client.models.order_request import OrderRequest
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.iserver_account_account_id_order_post200_response_inner import IserverAccountAccountIdOrderPost200ResponseInner
+from ibkr-web-api.models.order_request import OrderRequest
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.OrderApi(api_client)
+    api_instance = ibkr-web-api.OrderApi(api_client)
     fa_group = 'fa_group_example' # str | financial advisor group
-    body = openapi_client.OrderRequest() # OrderRequest | order request info
+    body = ibkr-web-api.OrderRequest() # OrderRequest | order request info
 
     try:
         # Place Orders for FA
@@ -617,22 +617,22 @@ To receive streaming live orders the endpoint /ws can be used. Refer to [Streami
 
 
 ```python
-import openapi_client
-from openapi_client.models.iserver_account_orders_get200_response import IserverAccountOrdersGet200Response
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.iserver_account_orders_get200_response import IserverAccountOrdersGet200Response
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.OrderApi(api_client)
+    api_instance = ibkr-web-api.OrderApi(api_client)
     filters = 'filters_example' # str | list of filters separated by comma (optional)
 
     try:
@@ -685,25 +685,25 @@ Reply to questions when placing orders and submit orders
 
 
 ```python
-import openapi_client
-from openapi_client.models.iserver_reply_replyid_post200_response_inner import IserverReplyReplyidPost200ResponseInner
-from openapi_client.models.iserver_reply_replyid_post_request import IserverReplyReplyidPostRequest
-from openapi_client.rest import ApiException
+import ibkr-web-api
+from ibkr-web-api.models.iserver_reply_replyid_post200_response_inner import IserverReplyReplyidPost200ResponseInner
+from ibkr-web-api.models.iserver_reply_replyid_post_request import IserverReplyReplyidPostRequest
+from ibkr-web-api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost:5000/v1/api
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = ibkr-web-api.Configuration(
     host = "http://localhost:5000/v1/api"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with ibkr-web-api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.OrderApi(api_client)
+    api_instance = ibkr-web-api.OrderApi(api_client)
     replyid = 'replyid_example' # str | Please use the \"id\" from the response of \"Place Order\" endpoint
-    body = openapi_client.IserverReplyReplyidPostRequest() # IserverReplyReplyidPostRequest | Answer to question
+    body = ibkr-web-api.IserverReplyReplyidPostRequest() # IserverReplyReplyidPostRequest | Answer to question
 
     try:
         # Place Order Reply

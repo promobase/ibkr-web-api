@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.ccp_auth_response_post200_response import CcpAuthResponsePost200Response
+from ibkr-web-api.models.ccp_auth_response_post200_response import CcpAuthResponsePost200Response
 
 # TODO update the JSON string below
 json = "{}"
